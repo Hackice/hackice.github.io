@@ -66,24 +66,24 @@ footer:
   icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
     # `heart` is recommended with animation in red (#ff0000).
-    name: Hackice Wang
+    name: bolt
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
     color: "#808080"
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright:
+  copyright: Hackice Wang
   # -------------------------------------------------------------
   powered:
     # Hexo link (Powered by Hexo).
     enable: true
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
     version: true
   # -------------------------------------------------------------
@@ -138,7 +138,7 @@ exturl: false
 menu:
   home: / || home
   about: /about/ || user
-  #tags: /tags/ || tags
+  tags: /tags/ || tags
   #categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
@@ -267,7 +267,7 @@ sidebar:
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 # Automatically saving scroll position on each post/page in cookies.
 save_scroll: false
@@ -303,8 +303,8 @@ symbols_count_time:
   separated_meta: true
   item_text_post: true
   item_text_total: false
-  awl: 4
-  wpm: 275
+  awl: 2
+  wpm: 300
 
 codeblock:
   # Manual define the border radius in codeblock
@@ -509,7 +509,7 @@ pangu: false
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname: hackice
   count: true
   lazyload: false
@@ -549,10 +549,10 @@ gitment:
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: Hackice # MUST HAVE, Your Github Username
-  github_repo: https://github.com/Hackice/hackice.github.io.git # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: 40f8b1db45b5b20577db # MUST HAVE, Github client id for the Gitment
-  client_secret: a870b4513cb40f7989d193491a3d689315245d23 # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: # MUST HAVE, Your Github Username
+  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: # MUST HAVE, Github client id for the Gitment
+  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
@@ -599,7 +599,7 @@ needmoreshare2:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-129688740-1
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster
