@@ -109,13 +109,14 @@
 
 
   <meta name="description" content="众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。">
+<meta name="keywords" content="Carthage,CocoaPods">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Carthage怎么用]Carthage与CocoaPods对比及入坑指南">
 <meta property="og:url" content="http://hackice.wang/2018/04/12/Carthage怎么用-Carthage与CocoaPods对比及入坑指南/index.html">
 <meta property="og:site_name" content="Hackice&#39;s Blog">
 <meta property="og:description" content="众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-23T02:04:32.011Z">
+<meta property="og:updated_time" content="2018-11-23T03:29:33.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Carthage怎么用]Carthage与CocoaPods对比及入坑指南">
 <meta name="twitter:description" content="众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。">
@@ -264,6 +265,23 @@
         
         
           
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
 
     
@@ -329,7 +347,7 @@
     <link itemprop="mainEntityOfPage" href="http://hackice.wang/2018/04/12/Carthage怎么用-Carthage与CocoaPods对比及入坑指南/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hackice Wang">
+      <meta itemprop="name" content="Hackice">
       <meta itemprop="description" content="「Stay hungry. Stay foolish.」">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -385,7 +403,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-23 10:04:32" itemprop="dateModified" datetime="2018-11-23T10:04:32+08:00">2018-11-23</time>
+                <time title="修改时间：2018-11-23 11:29:33" itemprop="dateModified" datetime="2018-11-23T11:29:33+08:00">2018-11-23</time>
               
             
           </span>
@@ -400,7 +418,8 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/04/12/Carthage怎么用-Carthage与CocoaPods对比及入坑指南/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/12/Carthage怎么用-Carthage与CocoaPods对比及入坑指南/" itemprop="commentsCount"></span>
+                
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/04/12/Carthage怎么用-Carthage与CocoaPods对比及入坑指南/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -520,7 +539,7 @@
 
 <ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Hackice Wang</li>
+    <strong>本文作者： </strong>Hackice</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
@@ -534,6 +553,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Carthage/" rel="tag"># Carthage</a>
+          
+            <a href="/tags/CocoaPods/" rel="tag"># CocoaPods</a>
+          
+        </div>
       
 
       
@@ -560,9 +587,9 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
     </div>
 
   
@@ -602,9 +629,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Hackice Wang">
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Hackice">
             
-              <p class="site-author-name" itemprop="name">Hackice Wang</p>
+              <p class="site-author-name" itemprop="name">Hackice</p>
               <p class="site-description motion-element" itemprop="description">「Stay hungry. Stay foolish.」</p>
           </div>
 
@@ -623,6 +650,21 @@
 
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -705,7 +747,7 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-Hackice Wang"></i>
+    <i class="fa fa-bolt"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Hackice Wang</span>
 
@@ -715,15 +757,11 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.5.0</div>
 
 
 
@@ -864,8 +902,27 @@
 
   
 
+  
+    <script id="dsq-count-scr" src="https://hackice.disqus.com/count.js" async></script>
+  
 
-
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://hackice.wang/2018/04/12/Carthage怎么用-Carthage与CocoaPods对比及入坑指南/';
+        this.page.identifier = '2018/04/12/Carthage怎么用-Carthage与CocoaPods对比及入坑指南/';
+        this.page.title = '[Carthage怎么用]Carthage与CocoaPods对比及入坑指南';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://hackice.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
   
 
 
@@ -873,41 +930,6 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: '1523499156000',
-            owner: 'Hackice',
-            repo: 'hackice.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'a870b4513cb40f7989d193491a3d689315245d23',
-            
-                client_id: '40f8b1db45b5b20577db'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
