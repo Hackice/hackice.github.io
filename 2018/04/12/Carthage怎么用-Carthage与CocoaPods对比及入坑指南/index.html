@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="前言众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。 批判前回顾下CocoaPods的优点 使用方便，除编写 Podfile 以外其他几乎都是自动完成 提供的三方框架数量巨大 静态/动态编译均支持  CocoaPo">
+  <meta name="description" content="众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Carthage怎么用]Carthage与CocoaPods对比及入坑指南">
 <meta property="og:url" content="http://hackice.wang/2018/04/12/Carthage怎么用-Carthage与CocoaPods对比及入坑指南/index.html">
 <meta property="og:site_name" content="Hackice&#39;s Blog">
-<meta property="og:description" content="前言众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。 批判前回顾下CocoaPods的优点 使用方便，除编写 Podfile 以外其他几乎都是自动完成 提供的三方框架数量巨大 静态/动态编译均支持  CocoaPo">
+<meta property="og:description" content="众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-22T16:16:40.905Z">
+<meta property="og:updated_time" content="2018-11-23T02:04:32.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Carthage怎么用]Carthage与CocoaPods对比及入坑指南">
-<meta name="twitter:description" content="前言众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。 批判前回顾下CocoaPods的优点 使用方便，除编写 Podfile 以外其他几乎都是自动完成 提供的三方框架数量巨大 静态/动态编译均支持  CocoaPo">
+<meta name="twitter:description" content="众所周知，多数iOS开发者在管理项目的三方框架时都在使用CocoaPods，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。">
 
 
 
@@ -140,6 +140,15 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129688740-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129688740-1');
+</script>
 
 
 
@@ -376,7 +385,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-23 00:16:40" itemprop="dateModified" datetime="2018-11-23T00:16:40+08:00">2018-11-23</time>
+                <time title="修改时间：2018-11-23 10:04:32" itemprop="dateModified" datetime="2018-11-23T10:04:32+08:00">2018-11-23</time>
               
             
           </span>
@@ -426,8 +435,8 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>众所周知，多数iOS开发者在管理项目的三方框架时都在使用<a href="https://cocoapods.org" title="CocoaPods" target="_blank" rel="noopener">CocoaPods</a>，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。</p>
-<h4 id="批判前回顾下CocoaPods的优点"><a href="#批判前回顾下CocoaPods的优点" class="headerlink" title="批判前回顾下CocoaPods的优点"></a>批判前回顾下CocoaPods的优点</h4><ul>
+        <p>众所周知，多数iOS开发者在管理项目的三方框架时都在使用<a href="https://cocoapods.org" title="CocoaPods" target="_blank" rel="noopener">CocoaPods</a>，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。<br><a id="more"></a></p>
+<h4 id="回顾CocoaPods的优点"><a href="#回顾CocoaPods的优点" class="headerlink" title="回顾CocoaPods的优点"></a>回顾CocoaPods的优点</h4><ul>
 <li>使用方便，除编写 Podfile 以外其他几乎都是自动完成</li>
 <li>提供的三方框架数量巨大</li>
 <li>静态/动态编译均支持</li>
@@ -449,14 +458,14 @@
 <li>只支持动态库</li>
 <li>需要自行管理依赖的接入</li>
 </ul>
-<h4 id="说了这么多，CocoaPods和Carthage我到底该如何选择？"><a href="#说了这么多，CocoaPods和Carthage我到底该如何选择？" class="headerlink" title="说了这么多，CocoaPods和Carthage我到底该如何选择？"></a>说了这么多，CocoaPods和Carthage我到底该如何选择？</h4><ol>
+<h4 id="到底该如何选择？"><a href="#到底该如何选择？" class="headerlink" title="到底该如何选择？"></a>到底该如何选择？</h4><ol>
 <li>CocoaPods和Carthage可以很好的共存，互不影响，使用两者为项目添加的依赖也都可以彼此共享。</li>
 <li>如果项目有一些库是代码量比较大的，编译相对耗时，（在已经兼容Carthage的情况下）建议使用Carthage，这样避免了CocoaPods不必要编译带来的时间损耗</li>
 <li>如果项目有一些库需要经常更新，而文件体积又不是很大，推荐使用CocoaPods以获得最轻松的体验</li>
 <li>如果项目有一些库提供了子集（比如PromiseKit/CorePromise这样的形式）需要使用CocoaPods来集成，因为Carthage并不支持这样的特性，只会帮你把所有仓库拉取下来编译</li>
 <li>处女座强烈推荐CocoaPods！</li>
 </ol>
-<h1 id="Carthage快速上手"><a href="#Carthage快速上手" class="headerlink" title="Carthage快速上手"></a>Carthage快速上手</h1><ol>
+<h4 id="Carthage快速上手"><a href="#Carthage快速上手" class="headerlink" title="Carthage快速上手"></a>Carthage快速上手</h4><ol>
 <li>安装Cartfile：<code>brew update</code>、<code>brew install carthage</code></li>
 <li>在项目根目录创建 <a href="https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile" title="Cartfile" target="_blank" rel="noopener">Cartfile</a> 文件，以声明需要引入项目的三方库</li>
 <li>执行<code>carthage update --cache-builds --platform iOS</code>更新三方库的源代码，并编译为二进制文件<blockquote>
@@ -479,9 +488,9 @@
 <blockquote>
 <p>With output files specified alongside the input files, Xcode only needs to run the script when the input files have changed or the output files are missing. This means dirty builds will be faster when you haven’t rebuilt frameworks with Carthage.</p>
 </blockquote>
-<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p><strong>框架未链接到项目</strong><br>如果运行xcode后项目停留在断点，并在控制台展示如下信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dyld: Library not loaded: @rpath/框架名.framework/框架名</span><br><span class="line">Referenced from: /Users/用户名/Library/Developer/CoreSimulator/Devices/...</span><br><span class="line">Reason: image not found</span><br></pre></td></tr></table></figure></p>
+<h4 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h4><p><strong>框架未链接到项目</strong><br>如果运行xcode后项目停留在断点，并在控制台展示如下信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dyld: Library not loaded: @rpath/框架名.framework/框架名</span><br><span class="line">Referenced from: /Users/用户名/Library/Developer/CoreSimulator/Devices/...</span><br><span class="line">Reason: image not found</span><br></pre></td></tr></table></figure></p>
 <p>则说明你没有将.framework正确链接到项目，请检查项目<code>Build Phases settings</code>选项卡“<em>Linked Frameworks and Libraries</em>”中已经拖入了所需要的.framework</p>
-<h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><p>奈何我们项目过于庞大，有大量依赖是无法通过Carthage解决的，如果要强行接入Carthage则必须使用CocoaPods + Carthage混合的模式进行依赖管理，徒增了开发者的维护成本，最终决定放弃Carthage，使用CocoaPods进行集中管理。</p>
+<h4 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h4><p>奈何我们项目过于庞大，有大量依赖是无法通过Carthage解决的，如果要强行接入Carthage则必须使用CocoaPods + Carthage混合的模式进行依赖管理，徒增了开发者的维护成本，最终决定放弃Carthage，使用CocoaPods进行集中管理。</p>
 
       
     </div>
@@ -667,7 +676,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#批判前回顾下CocoaPods的优点"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">批判前回顾下CocoaPods的优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CocoaPods的问题在哪里？"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">CocoaPods的问题在哪里？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#那么Carthage就能解决问题？"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">那么Carthage就能解决问题？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Carthage优点"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">Carthage优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#预知的风险"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">预知的风险</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#说了这么多，CocoaPods和Carthage我到底该如何选择？"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">说了这么多，CocoaPods和Carthage我到底该如何选择？</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Carthage快速上手"><span class="nav-number">2.</span> <span class="nav-text">Carthage快速上手</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常见问题"><span class="nav-number">3.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更新"><span class="nav-number">4.</span> <span class="nav-text">更新</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#回顾CocoaPods的优点"><span class="nav-number">1.</span> <span class="nav-text">回顾CocoaPods的优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CocoaPods的问题在哪里？"><span class="nav-number">2.</span> <span class="nav-text">CocoaPods的问题在哪里？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#那么Carthage就能解决问题？"><span class="nav-number">3.</span> <span class="nav-text">那么Carthage就能解决问题？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Carthage优点"><span class="nav-number">4.</span> <span class="nav-text">Carthage优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#预知的风险"><span class="nav-number">5.</span> <span class="nav-text">预知的风险</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#到底该如何选择？"><span class="nav-number">6.</span> <span class="nav-text">到底该如何选择？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Carthage快速上手"><span class="nav-number">7.</span> <span class="nav-text">Carthage快速上手</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见问题"><span class="nav-number">8.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新"><span class="nav-number">9.</span> <span class="nav-text">更新</span></a></li></ol></div>
             
 
           </div>
@@ -880,7 +889,7 @@
         var gitment = new Gitmint({
             id: '1523499156000',
             owner: 'Hackice',
-            repo: 'https://github.com/Hackice/hackice.github.io.git',
+            repo: 'hackice.github.io',
             
             lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
