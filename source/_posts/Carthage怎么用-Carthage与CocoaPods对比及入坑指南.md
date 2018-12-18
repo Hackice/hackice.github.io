@@ -1,7 +1,7 @@
 ---
 title: '[Carthage怎么用]Carthage与CocoaPods对比及入坑指南'
 date: 2018-04-12 10:12:36
-tags: [Carthage,CocoaPods]
+tags: [Carthage,CocoaPods,Xcode]
 ---
 众所周知，多数iOS开发者在管理项目的三方框架时都在使用[CocoaPods](https://cocoapods.org "CocoaPods")，其简单的用法、良好的语言兼容性以及中心化的管理方式给项目开发带来了极大的便利。但随着项目逐步迭代，依赖的数量随之提升，CocoaPods的问题也逐渐暴露出来。
 <!--more-->
