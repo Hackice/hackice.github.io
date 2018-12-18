@@ -3,7 +3,6 @@ title: 使用Xcode Template提高开发效率
 date: 2018-12-18 15:55:55
 tags: Xcode
 ---
-#### 什么是Template
 Template，又分为Project Template和File Template，是Xcode创建新项目或文件所使用的“模版”，我们每次开发一个新的功能都会使用到它，没有谁会愿意每次都从文件头写到默认实现。结合实际的使用场景，来看看如何自定义两种常用的文件Template。
 <!--more-->
 #### 情景一
