@@ -132,4 +132,4 @@ private struct <#RModel#>: URLRequestComponent {
 #### 结语
 与代码块相比，Xcode并没有提供一个便捷的创建Template的方式，因此在实际的开发场景中我们可能更多的是使用默认模版创建，并在其基础上进行修改，为什么不让这个过程变得更酷一点呢？
 
-~~本文提及的2个.xctemplate都已经上传至[GitHub](https://github.com/Hackice/XcodeFileTemplate ".xctemplate source files")。~~（TODO）
+本文提及的2个.xctemplate都已经上传至[GitHub](https://github.com/Hackice/XcodeFileTemplate ".xctemplate source files")。
